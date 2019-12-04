@@ -5,16 +5,20 @@ import Search from "./src/components/Search";
 import Location from "./src/components/Location";
 import AppBar from "./src/components/AppBar";
 import Header from "./src/components/Header";
-
-
+import Slider from "./src/components/Slider";
+import CategoryRow from "./src/components/CategoryRow";
+import Main from "./src/components/Main";
 
 export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <View style={{height:"30%"}}>
-       <Header/>
-       </View>
+        <View style={{ height: "30%" }}>
+          <Header />
+        </View>
+        <View style={{ height: "70%" }}>
+          <Main />
+        </View>
       </View>
     );
   }
@@ -23,7 +27,7 @@ export default class App extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "grey"
+    backgroundColor: "#eeeeee"
   },
   welcome: {
     fontSize: 20,
